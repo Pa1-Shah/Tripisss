@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
     Button signOut;
+    Button newTrip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_main);
         signOut = findViewById(R.id.sOut);
-
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Login.class));
             }
         });
+        newTrip = findViewById(R.id.createTrip);
+        newTrip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),New_Trip.class));
+            }
+        });
+
+
 
     }
 }
