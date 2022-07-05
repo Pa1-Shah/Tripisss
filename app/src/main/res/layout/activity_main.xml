@@ -4,15 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0077B5"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/sOut"
+        android:layout_width="252dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#24AF8F"
+        android:text="Sign Out"
+        android:textSize="18sp"
+        app:iconTint="#F3F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/createTrip"
+        android:layout_width="274dp"
+        android:layout_height="81dp"
+        android:backgroundTint="#24AF8F"
+        android:text="Create Your Own Trip"
+        android:textSize="18sp"
+        app:iconTint="#F3F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="346dp"
+        android:layout_height="113dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Welcome To TRIPISSS!"
+        android:textAlignment="center"
+        android:textColor="#C0C0C0"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
