@@ -13,6 +13,7 @@
         android:layout_height="57dp"
         android:backgroundTint="#24AF8F"
         android:text="ADD"
+        android:textColor="#263238"
         android:textSize="18sp"
         app:iconTint="#F3F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,29 +42,18 @@
 
     <EditText
         android:id="@+id/tripName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="209dp"
+        android:layout_height="59dp"
         android:ems="10"
         android:hint="Trip Name"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textColorHint="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.536" />
-
-    <TextView
-        android:id="@+id/prevORcurrTrips"
-        android:layout_width="170dp"
-        android:layout_height="43dp"
-        android:text="Current or Previous Trips"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
